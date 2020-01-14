@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Spooky Twins",
+        "url": "./images/spooky-twins.png"
+    },
+    {
+        "id": 2,
+        "name": "Balloon Skeleton",
+        "url": "./images/balloon-skeleton.png"
+    },
+    {
+        "id": 3,
+        "name": "Eyeballs",
+        "url": "./images/eyeballs.png"
+    },
+    {
+        "id": 4,
+        "name": "Eyepatch Girl",
+        "url": "./images/eyepatch-girl.png"
+    },
+    {
+        "id": 5,
+        "name": "Flower Twins",
+        "url": "./images/flower-twins.png"
+    },
+    {
+        "id": 6,
+        "name": "Kitties",
+        "url": "./images/kitties.png"
+    },
+    {
+        "id": 7,
+        "name": "Pentagram Girl",
+        "url": "./images/pentagram-girl.png"
+    },
+    {
+        "id": 8,
+        "name": "Rainbow Cat",
+        "url": "./images/rainbow-cat.png"
+    },
+    {
+        "id": 9,
+        "name": "Rose Girl",
+        "url": "./images/rose-girl.png"
+    },
+    {
+        "id": 10,
+        "name": "Skull With Hat",
+        "url": "./images/skull-with-hat.png"
+    },
+    {
+        "id": 11,
+        "name": "Soda Girl",
+        "url": "./images/soda-girl.png"
+    },
+    {
+        "id": 12,
+        "name": "Starry Eyed Girl",
+        "url": "./images/starry-eyed-girl.png"
+    }
+]

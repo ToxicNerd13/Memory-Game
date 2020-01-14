@@ -7,7 +7,7 @@ import images from './images.json';
 class App extends React.Component {
   state = {
     images,
-    clickedImages = [],
+    clickedImages: [],
     score: 0,
     message: ""
   };
@@ -16,7 +16,7 @@ class App extends React.Component {
   imageClick = (id) => {
     // Create new array with rearranged images
     const shuffledImages = this.shuffleImages(images);
-    this.setState({images: shuffledImages});
+    this.setState({ images: shuffledImages });
 
     // If the image has been clicked, reset the game
     if (this.state.clickedImages.includes(id)) {
@@ -42,23 +42,31 @@ class App extends React.Component {
         message: "Congrats, you win!"
       })
     }
-};
+  };
 
-shuffleImages = (images) => {
-
-}
+  // Randomly changes the image indexes so they become rearranged
+  shuffleImages = (images) => {
+    for (let i = images.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [images[i], images[j]] = [images[j], images[i]];
+    }
+    return images;
+  };
 
   render() {
     return (
       <div>
-        <div className="jumbotron text-center mb-5">
+        <div className="jumbotron text-center mb-5 p-1">
           <h1>Memory Game</h1>
           <h5>Click the pictures as they randomly rearrange! Don't click on any picture twice or you lose!</h5>
-          <Score />
+          <Score 
+          score={this.state.score}
+          message={this.state.message}
+          />
         </div>
 
         <div className="container">
-          <div className="row text-center">
+          <div className="row text-center mx-auto" id="pics-container">
             {this.state.images.map(image => (
               <div className="col-sm-3 mb-4">
                 <Image

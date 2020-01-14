@@ -1,3 +1,7 @@
 .img-thumbnail {
-    height: 250px;
+    height: 220px;
+}
+
+#pics-container {
+    width: 75vw;
 }

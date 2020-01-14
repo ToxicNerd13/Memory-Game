@@ -9,6 +9,11 @@ const Score = (props) => (
                 <p>{props.score}</p>
             </div>
         </div>
+        <div className="row">
+            <div className="col-sm-8 mx-auto mt-2">
+                <p>{props.message}</p>
+            </div>
+        </div>
     </div>
 );
 
